@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_gambar"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp">
+
+        <ImageView
+            android:id="@+id/gambar_bakteri"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:scaleType="fitXY"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/judul_gambar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toEndOf="@id/gambar_bakteri"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:text="Bakteri TB-1" />
+
+        <TextView
+            android:id="@+id/waktu_akses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            card_view:layout_constraintStart_toEndOf="@+id/gambar_bakteri"
+            card_view:layout_constraintTop_toBottomOf="@+id/judul_gambar"
+            tools:text="Accessed: 12/12/2021" />
+
+        <ImageView
+            android:id="@+id/jumlah_dokumen_icon"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/gambar_bakteri"
+            card_view:layout_constraintTop_toBottomOf="@+id/waktu_akses"
+            tools:src="@drawable/ic_baseline_file_copy_24" />
+
+        <TextView
+            android:id="@+id/jumlah_dokumen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            card_view:layout_constraintBottom_toBottomOf="@+id/jumlah_dokumen_icon"
+            card_view:layout_constraintStart_toEndOf="@+id/jumlah_dokumen_icon"
+            card_view:layout_constraintTop_toTopOf="@+id/jumlah_dokumen_icon"
+            tools:text="3" />
+
+        <TextView
+            android:id="@+id/tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            card_view:layout_constraintStart_toEndOf="@+id/jumlah_dokumen"
+            card_view:layout_constraintTop_toTopOf="@+id/jumlah_dokumen"
+            tools:text="Skripsi" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
