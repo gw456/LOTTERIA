@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LOTTERIA">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.detail.DetailPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.camera.CameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.bottom_navigation.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

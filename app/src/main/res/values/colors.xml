@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="warna_icon">#5CFFBB</color>
+    <color name="background_bottom_nav">#F4F4F4</color>
+    <color name="background_umum">#C0C0C0</color>
+    <color name="background_setting">#EEEEEE</color>
+    <color name="background_progressBar">#DCFFF0</color>
+    <color name="text_cloud_storage">#00CD77</color>
+    <color name="value_cloud_storage">#C4C4C4</color>
+    <color name="background_opsi_setting">#FDFDFD</color>
 </resources>

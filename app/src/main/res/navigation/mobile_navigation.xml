@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.lotteria.ui.home.HomePageFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home_page" />
+
+    <fragment
+        android:id="@+id/navigation_list_images"
+        android:name="com.example.lotteria.ui.list_images.ListImagesPageFragment"
+        android:label="Images"
+        tools:layout="@string/list_images_page" />
+
+    <fragment
+        android:id="@+id/navigation_setting"
+        android:name="com.example.lotteria.ui.setting.SettingPageFragment"
+        android:label="Setting"
+        tools:layout="@string/setting_page" />
+</navigation>
