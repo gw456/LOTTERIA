@@ -12,14 +12,18 @@
         <entry key="..\:/Users/Dell/AndroidStudioProjects/LOTTERIA/app/src/main/res/drawable/searchview.xml" value="0.1195" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/LOTTERIA/app/src/main/res/layout/activity_camera.xml" value="0.13903985507246377" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/LOTTERIA/app/src/main/res/layout/activity_detail_page.xml" value="0.13903985507246377" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/LOTTERIA/app/src/main/res/layout/activity_feedback.xml" value="0.25" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/LOTTERIA/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/LOTTERIA/app/src/main/res/layout/activity_main.xml" value="0.225" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/LOTTERIA/app/src/main/res/layout/activity_main2.xml" value="0.13903985507246377" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/LOTTERIA/app/src/main/res/layout/activity_register.xml" value="0.25" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/LOTTERIA/app/src/main/res/layout/fragment_home_page.xml" value="0.22" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/LOTTERIA/app/src/main/res/layout/fragment_list_images_page.xml" value="0.225" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/LOTTERIA/app/src/main/res/layout/fragment_setting_page.xml" value="0.25" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/LOTTERIA/app/src/main/res/layout/item_row_image.xml" value="0.25" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/LOTTERIA/app/src/main/res/layout/list_images_page.xml" value="0.25" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/LOTTERIA/app/src/main/res/menu/bottom_nav_menu.xml" value="0.225" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/LOTTERIA/app/src/main/res/menu/detail_page_options.xml" value="0.225" />
       </map>
     </option>
   </component>

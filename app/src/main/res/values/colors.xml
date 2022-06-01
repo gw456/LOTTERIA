@@ -15,4 +15,5 @@
     <color name="text_cloud_storage">#00CD77</color>
     <color name="value_cloud_storage">#C4C4C4</color>
     <color name="background_opsi_setting">#FDFDFD</color>
+    <color name="yellow_star">#FAFF00</color>
 </resources>

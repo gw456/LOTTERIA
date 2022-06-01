@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LOTTERIA">
         <activity
+            android:name=".ui.feedback.FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.register.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.detail.DetailPageActivity"
             android:exported="false" />
         <activity

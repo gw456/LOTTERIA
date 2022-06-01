@@ -17,4 +17,20 @@
     <string name="home_page">Home</string>
     <string name="list_images_page">Images</string>
     <string name="setting_page">Setting</string>
+    <string name="back">Back</string>
+    <string name="share">Share</string>
+    <string name="delete">Delete</string>
+    <string name="rename">Rename</string>
+    <string name="logout">Logout</string>
+    <string name="log_in">Log In</string>
+    <string name="login_instruction">or use your email</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Not Registered Yet?</string>
+    <string name="registration">Registration</string>
+    <string name="username">Username</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="feedback_description">Yuk beri feedback kami...</string>
+    <string name="submit">Submit</string>
 </resources>
