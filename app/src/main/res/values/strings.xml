@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">LOTTERIA</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="cloud_storage">Cloud Storage</string>
     <string name="account">Account</string>
@@ -31,6 +30,9 @@
     <string name="username">Username</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="sign_up">Sign Up</string>
-    <string name="feedback_description">Yuk beri feedback kami...</string>
+    <string name="feedback_description">Yuk beri feedback kami…</string>
     <string name="submit">Submit</string>
+    <string name="not_working_feature">Sorry, this feature still not working</string>
+    <string name="filter_type">Filter Gambar</string>
+    <string name="cloud_storage_value">31,95MB/500,00MB</string>
 </resources>

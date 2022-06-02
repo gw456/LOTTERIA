@@ -1,13 +1,17 @@
 package com.example.lotteria.ui.setting
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.example.lotteria.R
 import com.example.lotteria.databinding.FragmentListImagesPageBinding
 import com.example.lotteria.databinding.FragmentSettingPageBinding
+import com.example.lotteria.ui.feedback.FeedbackActivity
+import com.example.lotteria.ui.login.LoginActivity
 
 class SettingPageFragment : Fragment() {
 
@@ -22,6 +26,28 @@ class SettingPageFragment : Fragment() {
         _binding = FragmentSettingPageBinding.inflate(inflater, container, false)
         val root: View = binding.root
         return root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.apply {
+            namaAkun.text = R.string.username.toString()
+            cloudStorageValue.text = R.string.cloud_storage_value.toString()
+            account.setOnClickListener {
+                val intentLogin = Intent(requireActivity(), LoginActivity::class.java)
+                startActivity(intentLogin)
+            }
+            sync.setOnClickListener {
+                Toast.makeText(requireActivity(), R.string.not_working_feature, Toast.LENGTH_SHORT).show()
+            }
+            recommend.setOnClickListener {
+                val intentRecommend = Intent(requireActivity(), FeedbackActivity::class.java)
+                startActivity(intentRecommend)
+            }
+            logout.setOnClickListener {
+                Toast.makeText(requireActivity(), R.string.not_working_feature, Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 
     override fun onDestroyView() {

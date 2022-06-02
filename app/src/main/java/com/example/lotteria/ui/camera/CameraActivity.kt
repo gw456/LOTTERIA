@@ -79,7 +79,7 @@ class CameraActivity : AppCompatActivity() {
                         cameraSelector == CameraSelector.DEFAULT_BACK_CAMERA
                     )
 //                    setResult(AddStoryActivity.CAMERA_X_RESULT, intent)
-//                    finish()
+                    finish()
                 }
             }
         )
