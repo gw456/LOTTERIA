@@ -1,7 +1,11 @@
 package com.example.lotteria.ui.bottom_navigation
 
+import android.Manifest.permission.*
+import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -9,6 +13,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.lotteria.R
 import com.example.lotteria.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import java.util.jar.Manifest
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,6 +23,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val listPermission = arrayOf(
+            READ_EXTERNAL_STORAGE,
+            WRITE_EXTERNAL_STORAGE,
+            CAMERA)
+
+        ActivityCompat.requestPermissions(this,
+        listPermission,
+        PackageManager.PERMISSION_GRANTED)
 
         supportActionBar?.hide()
         val navView: BottomNavigationView = binding.navView

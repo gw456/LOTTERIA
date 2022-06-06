@@ -16,6 +16,7 @@ import androidx.core.content.ContextCompat
 import com.example.lotteria.R
 import com.example.lotteria.databinding.ActivityCameraBinding
 import com.example.lotteria.helper.createFile
+import com.example.lotteria.ui.add_image.AddImageActivity
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 
@@ -72,13 +73,13 @@ class CameraActivity : AppCompatActivity() {
                 }
 
                 override fun onImageSaved(output: ImageCapture.OutputFileResults) {
-                    val intent = Intent()
+                    val intent = Intent(this@CameraActivity, AddImageActivity::class.java)
                     intent.putExtra("picture", photoFile)
                     intent.putExtra(
                         "isBackCamera",
                         cameraSelector == CameraSelector.DEFAULT_BACK_CAMERA
                     )
-//                    setResult(AddStoryActivity.CAMERA_X_RESULT, intent)
+                    startActivity(intent)
                     finish()
                 }
             }

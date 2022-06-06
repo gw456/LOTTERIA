@@ -31,8 +31,9 @@ class SettingPageFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
-            namaAkun.text = R.string.username.toString()
-            cloudStorageValue.text = R.string.cloud_storage_value.toString()
+            gambarAkun.setImageResource(R.drawable.foto)
+            namaAkun.text = getString(R.string.username)
+            cloudStorageValue.text = getString(R.string.cloud_storage_value)
             account.setOnClickListener {
                 val intentLogin = Intent(requireActivity(), LoginActivity::class.java)
                 startActivity(intentLogin)

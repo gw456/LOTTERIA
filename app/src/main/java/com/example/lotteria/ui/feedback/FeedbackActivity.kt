@@ -21,12 +21,7 @@ class FeedbackActivity : AppCompatActivity() {
 
         binding.apply {
             feedbackButton.setOnClickListener {
-                val mFragmentManager = supportFragmentManager
-                val mSettingFragment = SettingPageFragment()
-                mFragmentManager.commit {
-                    addToBackStack(null)
-                    add(R.id.setting_page, mSettingFragment, SettingPageFragment::class.java.simpleName)
-                }
+                finish()
             }
         }
     }

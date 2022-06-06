@@ -35,4 +35,7 @@
     <string name="not_working_feature">Sorry, this feature still not working</string>
     <string name="filter_type">Filter Gambar</string>
     <string name="cloud_storage_value">31,95MB/500,00MB</string>
+    <string name="title">Give your image a title</string>
+    <string name="tag">Maybe you want to add a tag?</string>
+    <string name="save">Save</string>
 </resources>
