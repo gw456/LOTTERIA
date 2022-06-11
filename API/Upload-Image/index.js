@@ -7,7 +7,6 @@ var firebaseConfig = {
     messagingSenderId: "1072285161278",
     appId: "1:1072285161278:android:1f3904c1f9bb4a28d63e6f"
   };
-  // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   console.log(firebase);
 
@@ -40,7 +39,6 @@ video: {
 }
 };
 
-// Access webcam
 async function init() {
 try {
   const stream = await navigator.mediaDevices.getUserMedia(constraints);
@@ -50,16 +48,13 @@ try {
 }
 }
 
-// Success
 function handleSuccess(stream) {
 window.stream = stream;
 video.srcObject = stream;
 }
 
-// Load init
 init();
 
-// Draw image
 var context = canvas.getContext('2d');
 snap.addEventListener("click", function() {
   context.drawImage(video, 0, 0, 640, 480);
