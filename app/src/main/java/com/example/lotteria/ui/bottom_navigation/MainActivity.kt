@@ -13,6 +13,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.lotteria.R
 import com.example.lotteria.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.auth.FirebaseAuth
 import java.util.jar.Manifest
 
 class MainActivity : AppCompatActivity() {

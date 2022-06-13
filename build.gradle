@@ -1,4 +1,20 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        // Top-level variables used for versioning
+        ext.kotlin_version = '1.6.21'
+        ext.java_version = JavaVersion.VERSION_1_8
+    }
+    repositories {
+        // Check that you have the following line (if not, add it):
+        google()  // Google's Maven repository
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.google.gms:google-services:4.3.10'
+        classpath 'com.android.tools.build:gradle:4.2.2'
+        classpath 'com.diffplug.spotless:spotless-plugin-gradle:5.11.1'
+    }
+}// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
     id 'com.android.application' version '7.1.3' apply false
     id 'com.android.library' version '7.1.3' apply false

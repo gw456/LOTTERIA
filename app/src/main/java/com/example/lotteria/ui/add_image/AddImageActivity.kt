@@ -68,7 +68,7 @@ class AddImageActivity : AppCompatActivity() {
                         textInputLayout.error = "Masukkan judul gambar"
                     }
                     else -> {
-                        val filePath = File("/storage/emulated/0/Download/LOTTERIA/"
+                        val filePath = File("/storage/emulated/0/Android/media/com.example.lotteria/image/"
                                 + title + ".jpg")
                         if (filePath.exists()) {
                             filePath.delete()

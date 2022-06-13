@@ -2,6 +2,7 @@ package com.example.lotteria.ui.list_images
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Environment
 import android.system.Os
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -64,9 +65,16 @@ class ListImagesPageFragment : Fragment() {
 
     fun init() {
         val listImages = ArrayList<Image>()
-        val path = "/storage/emulated/0/Download/LOTTERIA"
-        val directory = File(path)
-        val files = directory.listFiles()
+//        val path = "/storage/emulated/0/Download/LOTTERIA"
+//        val directory = File(path)
+//        val files = directory.listFiles()
+        val pathDevice = "/storage/emulated/0/Android/media/com.example.lotteria/image"
+        val directoryDevice = File(pathDevice)
+        if (!directoryDevice.exists()) {
+            directoryDevice.setWritable(true)
+            directoryDevice.mkdir()
+        }
+        val files = directoryDevice.listFiles()
         if (files != null) {
             files.forEach {
                 val attrs = Files.readAttributes(it.toPath(), BasicFileAttributes::class.java)

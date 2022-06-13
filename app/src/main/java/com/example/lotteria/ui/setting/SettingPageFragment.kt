@@ -12,11 +12,15 @@ import com.example.lotteria.databinding.FragmentListImagesPageBinding
 import com.example.lotteria.databinding.FragmentSettingPageBinding
 import com.example.lotteria.ui.feedback.FeedbackActivity
 import com.example.lotteria.ui.login.LoginActivity
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class SettingPageFragment : Fragment() {
 
     private var _binding: FragmentSettingPageBinding? = null
     private val binding get() = _binding!!
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -46,7 +50,9 @@ class SettingPageFragment : Fragment() {
                 startActivity(intentRecommend)
             }
             logout.setOnClickListener {
-                Toast.makeText(requireActivity(), R.string.not_working_feature, Toast.LENGTH_SHORT).show()
+                auth = Firebase.auth
+                auth.signOut()
+                Toast.makeText(requireActivity(), "Succeeded Log Out", Toast.LENGTH_SHORT).show()
             }
         }
     }

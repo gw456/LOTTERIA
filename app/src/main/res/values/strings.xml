@@ -38,4 +38,5 @@
     <string name="title">Give your image a title</string>
     <string name="tag">Maybe you want to add a tag?</string>
     <string name="save">Save</string>
+    <string name="unknown">UNKNOWN</string>
 </resources>

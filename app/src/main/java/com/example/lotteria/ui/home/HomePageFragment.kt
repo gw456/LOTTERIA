@@ -61,20 +61,26 @@ class HomePageFragment : Fragment() {
 
     private fun setImagesList() {
         val listImages = ArrayList<Image>()
-        val path = "/storage/emulated/0/Download/LOTTERIA"
-        val directory = File(path)
-        val files = directory.listFiles()
-        if (files != null) {
-            files.forEach {
-                val attrs = Files.readAttributes(it.toPath(), BasicFileAttributes::class.java)
-                val gambar = Image(it.nameWithoutExtension,
-                    it.absolutePath,
-                    attrs.lastAccessTime().toString(),
-                    null)
-                listImages.add(gambar)
-            }
+//        val path = "/storage/emulated/0/Download/LOTTERIA"
+//        val directory = File(path)
+//        val files = directory.listFiles()
+        val pathDevice = "/storage/emulated/0/Android/media/com.example.lotteria/image"
+        val directoryDevice = File(pathDevice)
+        if (!directoryDevice.exists()) {
+            directoryDevice.setWritable(true)
+            directoryDevice.mkdir()
         }
-        val adapter = ListRecentImageAdapter(listImages, 10)
+        val files = directoryDevice.listFiles()
+        val jumlahItem = files?.size ?: 0
+        files?.forEach {
+            val attrs = Files.readAttributes(it.toPath(), BasicFileAttributes::class.java)
+            val gambar = Image(it.nameWithoutExtension,
+                it.absolutePath,
+                attrs.lastAccessTime().toString(),
+                null)
+            listImages.add(gambar)
+        }
+        val adapter = ListRecentImageAdapter(listImages, if (jumlahItem<10)jumlahItem else 10)
         binding.recentGambarBakteri.adapter = adapter
 
         adapter.setOnItemClickCallback(object : ListRecentImageAdapter.OnItemClickCallback {
